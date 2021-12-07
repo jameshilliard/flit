@@ -7,6 +7,3 @@ from flit_core._vendor.tomli._parser import TOMLDecodeError, load, loads
 
 # Pretend this exception was created here.
 TOMLDecodeError.__module__ = "tomli"
-
-
-#test edit
