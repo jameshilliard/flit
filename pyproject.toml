@@ -42,3 +42,10 @@ Source = "https://github.com/pypa/flit"
 
 [project.scripts]
 flit = "flit:main"
+
+[tool.vendoring]
+destination = "flit_core/flit_core/_vendor/"
+requirements = "flit_core/flit_core/_vendor/vendor.txt"
+namespace = "flit_core._vendor"
+
+protected-files = ["__init__.py", "vendor.txt"]
